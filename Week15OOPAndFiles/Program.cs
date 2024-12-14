@@ -1,5 +1,4 @@
 ﻿List<Movie> myMovies = new List<Movie>();
-
 string[] data = GetDataFromMyFile();
 
 foreach (string line in data)
@@ -8,7 +7,6 @@ foreach (string line in data)
     Movie newMovie = new Movie(tempArray[0], tempArray[2]);
     myMovies.Add(newMovie);
 }
-
 
 foreach (Movie movie in myMovies)
 {
@@ -24,6 +22,7 @@ static string[] GetDataFromMyFile()
 }
 
 
+
 static void ReadDataFromArray(string[] someArray)
 {
     foreach (string line in someArray)
@@ -31,8 +30,6 @@ static void ReadDataFromArray(string[] someArray)
         Console.WriteLine(line);
     }
 }
-
-
 class Movie
 {
     string title; 
@@ -42,7 +39,6 @@ class Movie
     {
         get { return title; }
     }
-
     public string Year
     {
         get { return year; }
